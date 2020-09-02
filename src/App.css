@@ -1,0 +1,266 @@
+
+.App {
+  text-align: center;
+ color: black;
+ 
+}
+
+.navbar {
+  background: #575757;
+}
+.navbar-brand h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: #0f0f0f;
+  padding: 10px;
+}
+
+.navbar-brand h2 span {
+  font-weight: bolder;
+  color: #8d8d8d;
+}
+
+.nav-link {
+  color: #fff !important;
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.main-home {
+  
+  background-color: #bdbdbd; 
+   height: 100vh;
+}
+
+
+.main-home button {
+  margin-top: 150px;
+  background-color: #000;
+  color: #fafafa;
+  width: 200px;
+  padding: 10px;
+  border-radius: 6px;
+  outline: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 10px 5px 10px rgb(0, 0, 0);
+}
+
+.main-calculator {
+  background-image: url(./asset/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-color: #0f0f0f;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+}
+
+.main-calculator .card {
+  margin: 150px auto;
+  width: 85%;
+  padding: 20px;
+  border: none;
+  background-color: #fafafa;
+  box-shadow: 5px 5px 15px 5px grey;
+}
+
+
+.main-calculator .card .gpa-form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.main-calculator .gpa-form .course-main label {
+  margin-right: 20px;
+  font-size: 17px;
+  
+}
+
+.main-calculator .gpa-form .course-main input {
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 8px;
+  width: 200px;
+  height: 40px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid rgb(117, 117, 117);
+}
+
+.main-calculator .gpa-form .grade-main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-calculator .gpa-form .grade-main label{
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.main-calculator .gpa-form .grade-main input{
+  width: 200px;
+  height: 40px;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  border: 1px solid rgb(117, 117, 117);
+
+}
+
+
+.crud-btn img{
+  width: 20px;
+  color: #ff0000 !important;
+  cursor: pointer;
+}
+
+.main-calculator .gpa-form .credit-main label {
+  margin-right: 20px;
+}
+
+
+.main-calculator .gpa-form .credit-main input{
+  width: 200px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  border: 1px solid rgb(117, 117, 117);
+  font-size: 15px;
+
+}
+
+
+.main-calculator .card .btn {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.main-calculator .add-new button {
+  background-color: #000;
+  color: #fff;
+  height: 50px;
+  border: none;
+  width: 250px;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main-calculator .calculate-btn button {
+  background-color: #000;
+  color: #fff;
+  height: 50px;
+  border: none;
+  width: 250px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main-calculator .add-semester .add-new button {
+  background-color: #007a04;
+  outline: none;
+}
+
+
+.add-new-semester {
+  background: #000;
+  color: #fafafa;
+  text-transform: uppercase;
+  border-radius: 0 !important;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px;
+  margin-top: 20px;
+  /* margin-bottom: 20px; */
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+
+.add-new-semester:hover {
+  background: transparent;
+  border: 1px solid #000000;
+  color: #000;
+
+}
+
+.back {
+  background: transparent;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 12px;
+  width: 70px;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
+.back .back-to {
+  text-decoration: none;
+  color: #000000;
+}
+
+.result .card {
+  margin: 150px auto;
+  width: 85%;
+  padding: 20px;
+  border: none;
+  background-color: #fafafa;
+  box-shadow: 5px 5px 15px 5px grey;
+}
+
+@media screen and (max-width: 992px) {
+  
+  
+  .main-calculator .card .gpa-form {
+    display: inline-block;
+    margin-top: 20px;
+    
+  }
+
+  .main-calculator .gpa-form .input {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  
+  .main-calculator .card {
+    margin: 70px auto;
+    
+  }
+  
+  .main-calculator .card .gpa-form {
+    display: inline-block;    
+  }
+  
+  .main-calculator .gpa-form .grade-main {
+    display: inline-block;
+  }
+  .main-calculator .gpa-form .course-main {
+    display: inline-block;
+  }
+  .main-calculator .gpa-form .credit-main {
+    display: inline-block;
+  }
+  
+  .main-calculator .gpa-form .grade-main label{
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+  
+  .main-calculator .gpa-form .grade-main input{
+    width: 200px;
+    height: 40px;  
+  }
+
+}
