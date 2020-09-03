@@ -75,14 +75,13 @@ class AddResult extends Component {
 					grade,
 					credit,
 					gradeVal
-				};
+				}; 
 				dispatch({ type: 'ADD_RESULT', payload: newResult });
 				this.props.history.push('/calculate');
 			} else {
 				this.setState({
 					error: !error
 				});
-				console.log(error)
 
 				setTimeout(() => {
 					this.setState({
@@ -106,7 +105,7 @@ class AddResult extends Component {
 		return (
 			<Consumer>
 				{(value) => {
-					const { dispatch } = value;
+					const { dispatch, results, cumulativeData } = value;
 					return (
 						<div className="main-calculator">
 
