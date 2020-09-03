@@ -162,10 +162,7 @@ class AddResult extends Component {
 										
 										
 										<div className="btn">
-											{/* <div className="add-new">
-												<button>Add another course</button>
-											</div> */}
-
+											
 											<div className="calculate-btn">
 											<button  type="submit">Calculate</button>
 
@@ -179,9 +176,7 @@ class AddResult extends Component {
 							</div>
 
 
-								<div className="">
-									{/* <Results/> */}
-								</div>
+								
 						 </div>
 					
 						
