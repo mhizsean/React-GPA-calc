@@ -21,8 +21,6 @@ class Result extends Component {
 								<td>{grade}</td>
 								<td>{credit}</td>
 								<td>
-									
-									
 									<div className="crud-btn">
                                         <img src={del} alt="" onClick={this.deleteResult.bind(this, dispatch, id)}/>
                                     </div>

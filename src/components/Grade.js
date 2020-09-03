@@ -17,8 +17,10 @@ class AddResult extends Component {
 		//check if fields are empty
 		if (course === '' || grade === '' || credit === '') {
 			this.setState({
-				errMessage: !errMessage
+				errMessage: !errMessage,
+				
 			});
+			console.log(errMessage)
 		
 		} else {
 			if (grade === 'A') {
@@ -80,11 +82,14 @@ class AddResult extends Component {
 				this.setState({
 					errMessage: !errMessage
 				});
-				setTimeout(() => {
-					this.setState({
-						errMessage: false
-					});
-				}, 3000);
+				console.log(errMessage)
+
+				// setTimeout(() => {
+				// 	this.setState({
+				// 		errMessage: false
+				// 	});
+				// 	console.log(errMessage)
+				// }, 3000);
 			}
 		}
 	};

@@ -3,17 +3,17 @@ import Result from './Result';
 import { Consumer } from '../Context';
 import { Link } from 'react-router-dom';
 import Gp from './Gp';
+import add from '../asset/add.png'
 
 
 
 class Results extends Component {
 
-	CalcGp = (results, dispatch) => {
+	CalculateGPA = (results, dispatch) => {
 		const totalcredits = results.map((result) => parseInt(result.credit)).reduce((prev, next) => prev + next);
 		const totalGradeVal = results.map((result) => result.gradeVal).reduce((prev, next) => prev + next);
 		let gpa = (totalGradeVal / totalcredits).toFixed(2);
 		dispatch({ type: 'GPA', payload: gpa });
-		// this.props.history.push('/spinner');
 		setTimeout(() => {
 			this.props.history.push(<Gp/>);
 		}, 2000);
@@ -29,21 +29,19 @@ class Results extends Component {
         console.log(cumulative_data);
 		dispatch({type: 'CUMULATIVE_DATA', payload: cumulative_data});
 		this.DeleteGp(dispatch);
-		this.props.history.push('/addresults');
+		this.props.history.push('/');
 	}
 
 	calc_cgpa = (results, dispatch) => {
-		const totalcredits = results.map((result) => parseInt(result.credit)).reduce((prev, next) => prev + next);
+		const totalUnits = results.map((result) => parseInt(result.unit)).reduce((prev, next) => prev + next);
 		const totalGradeVal = results.map((result) => result.gradeVal).reduce((prev, next) => prev + next);
 		const cumulative_data = {
-			totalcredits: totalcredits,
+			totalUnits: totalUnits,
 			totalGradeVal: totalGradeVal
 		}
 		console.log(cumulative_data);
 		dispatch({type: 'CUMULATIVE_DATA', payload: cumulative_data});
 
-		//Semester details 
-     	this.props.history.push('results/semesterDetails');
 	}
 	DeleteGp = (dispatch) => {
 		const newResult = [];
@@ -51,8 +49,10 @@ class Results extends Component {
 
 	};
 
+
+
 	ContinueCalc = () => {
-		this.props.history.push('/addresults');
+		this.props.history.push('/');
 	};
 	render() {
 		return (
@@ -63,7 +63,7 @@ class Results extends Component {
 						<div className="result">
 
 							<div className="back">
-								<Link to="/addresults" className="back-to">Back</Link>
+								<Link to="/" className="back-to">Back</Link>
 							</div>
 							<div className="container mt-5">
 								<div className="card">
@@ -79,39 +79,25 @@ class Results extends Component {
 									</table>
 									{results.length !== 0 ? (
 										<div>
-										<div className="text-center mb-5">
-											<button
-												onClick={this.ContinueCalc.bind(this)}
-												className="btn mx-2 mt-2 btn-outline-dark"
-											>
-												Add More Courses
-											</button>
+										<div className="text-center">
+											
+
+											<img src={add} onClick={this.ContinueCalc.bind(this)} alt="" className="add-course"/>
 											
 											<button
-												onClick={this.CalcGp.bind(this, results, dispatch)}
+												onClick={this.CalculateGPA.bind(this, results, dispatch)}
 												className="btn mx-2 mt-2 btn-outline-dark"
 											>
-												Calculate GPA
+												Get GP
 											</button>
-											<button
-												onClick={this.calc_cgpa.bind(this, results, dispatch)}
-												className="btn mt-2 mx-2 btn-outline-dark"
-											>
-												Calculate CGPA
-											</button>
-											<button
-												onClick={this.DeleteGp.bind(this, dispatch)}
-												className="btn mt-2 btn-outline-danger"
-											>
-												Delete Result
-											</button>
+											
 											</div>
 											<div className="text-center btn-semester">
 												<button
 													onClick={this.AddNewResult.bind(this, results, dispatch)}
 													className="add-new-semester"
 												>
-													add new semester result
+													add new a semester result
 												</button>
 											</div>
 											</div>

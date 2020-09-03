@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Consumer } from '../Context';
 
 class Cgpa extends Component {
-   
-
 
 	render() {
 		return (
@@ -29,5 +27,6 @@ const styles = {
 	background:'#ccc',
 	width:'100%'
 }
+
 
 export default Cgpa;
