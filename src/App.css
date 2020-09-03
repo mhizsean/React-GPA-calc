@@ -27,7 +27,7 @@
   letter-spacing: 1px;
 }
 
-.main-home {
+/* .main-home {
   
   background-color: #bdbdbd; 
    height: 100vh;
@@ -45,7 +45,7 @@
   font-weight: bold;
   text-transform: uppercase;
   box-shadow: 10px 5px 10px rgb(0, 0, 0);
-}
+} */
 
 .main-calculator {
   background-image: url(./asset/bg.jpg);
@@ -237,6 +237,59 @@
   border-radius: 50%;
 }
 
+.main-about .header-about {
+  background-image: url(asset/bg.jpg);
+  min-height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(27, 27, 27);
+  background-blend-mode: overlay;
+  padding: 30px;
+}
+
+
+
+.main-about .header-about h2 {
+  margin-top: 150px;
+  color: #fafafa;
+  text-shadow: 2px 2px 5px #ffdbdb;
+  font-weight: bold;
+  letter-spacing: .2rem;
+}
+
+.main-about .body-about {
+  background-image: url(./asset/calc.png);
+  height: 600px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-color: rgb(247, 247, 247);
+  padding: 30px;  
+}
+
+.main-about .body-about .body-about-main {
+  margin: 80px auto;
+  width: 60%;
+}
+
+.main-about .body-about h2{
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+
+.main-about .body-about p{
+  font-size: 15px;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+
+
+
+/* Responsiveness */
 @media screen and (max-width: 992px) {
   
   

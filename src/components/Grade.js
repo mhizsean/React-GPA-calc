@@ -12,7 +12,7 @@ class AddResult extends Component {
 
 	onSubmit = (dispatch, e) => {
 		e.preventDefault();
-		e.target.reset();
+		// e.target.reset();
 		const { course, grade, credit, errMessage } = this.state;
 		//check if fields are empty
 		if (course === '' || grade === '' || credit === '') {
