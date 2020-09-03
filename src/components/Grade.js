@@ -7,20 +7,20 @@ class AddResult extends Component {
 		course: '',
 		grade: '',
 		credit: '',
-		errMessage: false
+		error: false
 	};
 
 	onSubmit = (dispatch, e) => {
 		e.preventDefault();
 		// e.target.reset();
-		const { course, grade, credit, errMessage } = this.state;
+		const { course, grade, credit, error } = this.state;
 		//check if fields are empty
 		if (course === '' || grade === '' || credit === '') {
 			this.setState({
-				errMessage: !errMessage,
+				error: !error,
 				
 			});
-			console.log(errMessage)
+			console.log(error)
 		
 		} else {
 			if (grade === 'A') {
@@ -33,7 +33,7 @@ class AddResult extends Component {
 					gradeVal
 				};
 				dispatch({ type: 'ADD_RESULT', payload: newResult });
-				this.props.history.push('/results');
+				this.props.history.push('/calculate');
 			} else if (grade === 'B') {
 				const gradeVal = 4 * parseInt(credit);
 				const newResult = {
@@ -44,7 +44,7 @@ class AddResult extends Component {
 					gradeVal
 				};
 				dispatch({ type: 'ADD_RESULT', payload: newResult });
-				this.props.history.push('/results');
+				this.props.history.push('/calculate');
 			} else if (grade === 'C') {
 				const gradeVal = 3 * parseInt(credit);
 				const newResult = {
@@ -55,7 +55,7 @@ class AddResult extends Component {
 					gradeVal
 				};
 				dispatch({ type: 'ADD_RESULT', payload: newResult });
-				this.props.history.push('/results');
+				this.props.history.push('/calculate');
 			} else if (grade === 'D') {
 				const gradeVal = 2 * parseInt(credit);
 				const newResult = {
@@ -66,7 +66,7 @@ class AddResult extends Component {
 					gradeVal
 				};
 				dispatch({ type: 'ADD_RESULT', payload: newResult });
-				this.props.history.push('/results');
+				this.props.history.push('/calculate');
 			} else if (grade === 'F') {
 				const gradeVal = 0 * parseInt(credit);
 				const newResult = {
@@ -77,19 +77,19 @@ class AddResult extends Component {
 					gradeVal
 				};
 				dispatch({ type: 'ADD_RESULT', payload: newResult });
-				this.props.history.push('/results');
+				this.props.history.push('/calculate');
 			} else {
 				this.setState({
-					errMessage: !errMessage
+					error: !error
 				});
-				console.log(errMessage)
+				console.log(error)
 
-				// setTimeout(() => {
-				// 	this.setState({
-				// 		errMessage: false
-				// 	});
-				// 	console.log(errMessage)
-				// }, 3000);
+				setTimeout(() => {
+					this.setState({
+						error: false
+					});
+					console.log(error)
+				}, 3000);
 			}
 		}
 	};
@@ -98,11 +98,11 @@ class AddResult extends Component {
 
 	onChange = (e) => {
 		this.setState({
-			[e.target.name]: e.target.value
+			[e.target.name]: e.target.value.trim().toUpperCase()
 		});
 	};
 	render() {
-		const { course, grade, credit, errMessage } = this.state;
+		const { course, grade, credit, error } = this.state;
 		return (
 			<Consumer>
 				{(value) => {
@@ -115,7 +115,7 @@ class AddResult extends Component {
 						 		<div className="card">
 								
 									<div className="error-message">
-                                        {errMessage ? (
+                                        {error ? (
                                             <div className="alert alert-danger">
                                                 <p>Please fill all fields correctly!</p>
                                             </div>
@@ -159,8 +159,7 @@ class AddResult extends Component {
 											</div>
 										</div>
 									
-										
-										
+																				
 										<div className="btn">
 											
 											<div className="calculate-btn">
@@ -169,14 +168,8 @@ class AddResult extends Component {
 											</div>
 										</div>
 										
-										{/* <button  type="submit">Calculate</button> */}
-
-									</form>
-									
-							</div>
-
-
-								
+									</form>							
+							</div>								
 						 </div>
 					
 						

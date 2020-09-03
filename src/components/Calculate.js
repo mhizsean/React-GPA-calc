@@ -7,7 +7,7 @@ import add from '../asset/add.png'
 
 
 
-class Results extends Component {
+class Calculate extends Component {
 
 	CalculateGPA = (results, dispatch) => {
 		const totalcredits = results.map((result) => parseInt(result.credit)).reduce((prev, next) => prev + next);
@@ -32,17 +32,7 @@ class Results extends Component {
 		this.props.history.push('/');
 	}
 
-	calc_cgpa = (results, dispatch) => {
-		const totalUnits = results.map((result) => parseInt(result.unit)).reduce((prev, next) => prev + next);
-		const totalGradeVal = results.map((result) => result.gradeVal).reduce((prev, next) => prev + next);
-		const cumulative_data = {
-			totalUnits: totalUnits,
-			totalGradeVal: totalGradeVal
-		}
-		console.log(cumulative_data);
-		dispatch({type: 'CUMULATIVE_DATA', payload: cumulative_data});
-
-	}
+	
 	DeleteGp = (dispatch) => {
 		const newResult = [];
 		dispatch({ type: 'DELETE_GP', payload: newResult });
@@ -118,4 +108,4 @@ class Results extends Component {
 	}
 }
 
-export default Results;
+export default Calculate;

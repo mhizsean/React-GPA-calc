@@ -41,29 +41,8 @@ const reducer = (state, action) => {
 };
 export class Provider extends Component {
 	state = {
-		results: [
-			// {
-			// 	id: 1,
-			// 	course: 'Eng',
-			// 	grade: 'A',
-			// 	unit: '3'
-			// },
-			// {
-			// 	id: 2,
-			// 	course: 'Math',
-			// 	grade: 'B',
-			// 	unit: '3'
-			// },
-			// {
-			// 	id: 3,
-			// 	course: 'Biology',
-			// 	grade: 'C',
-			// 	unit: '1'
-			// }
-		],
-         cumulativeData :[
-
-		 ],
+		results: [],
+         cumulativeData :[ ],
 		gpa: 0,
 		cgpa:0,
 		dispatch: (action) => {
