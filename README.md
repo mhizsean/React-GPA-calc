@@ -14,7 +14,9 @@ Clicking of the ADD new semester, automatically wipes the previous courses recor
 ### Methods
 
 #### Wireframe
-Aa wireframe 
+A wireframe is a way to design a website service at the structural level. A wireframe is commonly used to lay out content and functionality on a page which takes into account user needs and user journeys. Wireframes are used early in the development process to establish the basic structure of a page before visual design and content is added.  
+The wireframe was the second stage for this app before going into writing code. For the wireframing of this project, it was done on [draw.io](https://app.diagrams.net/)
+
 
 #### React
 React is a popular used frontend JavaScript library which is also called a framework was launched in 2013. It makes it easy defining what a UI should look like. The JSX helps in writing HTML in JavaScript. React boosts productivity and facilitates maintenance. It ensures faster rendering wwhen building a heavy load application with the virtual DOM. Whe usin gReact Js one can be sure to have stable code as changes made in child component doesn't affect the parent component.  
@@ -27,6 +29,8 @@ The Link, BrowserRouter, Route and Switch was used in this project to achieve th
 #### Bootstrap 
 For a responsive and application, bootsrap was implemented, from the header to the table and card. Bootstrap is a framewor that help design websites faster and easier. It includes HTML andCSS based trmplates and also Javascript. With additonal CSS styling i created other parts of the project that I didnt make use of bootstrap. To ise bootstrap, it can either be installed or use of the cdn or download of the offline files.
 
+#### State Management
+
 #### Context State Management
 Context provides a way to pass data through the component tree without having to pass props. It is designed to share data all round the react compnent.    
 In the Context.js file, the createContext creates an object. When React renders a component that subscribes to this Context object it will read the current context value from the closest matching Provider above it in the tree.  
@@ -38,7 +42,10 @@ The useReducer(reducer) takes two parameters, state and action and returns a new
 In the App.js we import the Provider and wrap it around the components. In each component js file the Consumer is wrapped as the parent div.
 
 #### UUID
-This was used to generate random unique identifier for each inputed course. This helps the deleting and calculating aspecting of the project. to delete a data, the data has to be identifiied by a unique id. This is what the UUID does. The UUID is fast, uniform, secure, unpredictable and can also  be URL-friendly
+This was used to generate random unique identifier for each inputed course. This helps the deleting and calculating aspecting of the project. to delete a data, the data has to be identifiied by a unique id. This is what the UUID does. The UUID is fast, uniform, secure, unpredictable and can also  be URL-friendly.
+
+#### errors
+In case of empty fields or inputing the wrong data, an error alert shows so the error can be fixed. For instance, leaving the course field will return an error when a user clicks on the calculate button. Also when the grade inputed is not A, B, C, D or F it gives an error.
 
 ## Installation
 To install this project, 
@@ -72,3 +79,10 @@ To calculate for a new semester the user has to click on Add new smester button.
 
 [Context state management](https://reactjs.org/docs/context.html)
 
+[Usefulness of react](https://da-14.com/blog/its-high-time-reactjs-ten-reasons-give-it-try)
+
+[UUID](https://medium.com/javascript-in-plain-english/you-might-not-need-uuid-v4-for-generating-random-identifiers-89e8a28a7d77)
+
+[JSX](https://reactjs.org/docs/introducing-jsx.html)
+
+[Wireframe](https://www.experienceux.co.uk/faqs/what-is-wireframing/)

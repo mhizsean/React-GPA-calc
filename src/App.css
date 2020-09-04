@@ -27,26 +27,6 @@
   letter-spacing: 1px;
 }
 
-/* .main-home {
-  
-  background-color: #bdbdbd; 
-   height: 100vh;
-}
-
-
-.main-home button {
-  margin-top: 150px;
-  background-color: #000;
-  color: #fafafa;
-  width: 200px;
-  padding: 10px;
-  border-radius: 6px;
-  outline: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  box-shadow: 10px 5px 10px rgb(0, 0, 0);
-} */
-
 .main-calculator {
   background-image: url(./asset/bg.jpg);
   background-position: center;

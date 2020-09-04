@@ -14,7 +14,7 @@ class AddResult extends Component {
 		e.preventDefault();
 		// e.target.reset();
 		const { course, grade, credit, error } = this.state;
-		//check if fields are empty
+		//iffields are empty
 		if (course === '' || grade === '' || credit === '') {
 			this.setState({
 				error: !error,
@@ -92,7 +92,6 @@ class AddResult extends Component {
 			}
 		}
 	};
-
 	
 
 	onChange = (e) => {
