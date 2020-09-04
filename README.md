@@ -45,14 +45,30 @@ To install this project,
 
 #### `npm install`
 
+or 
+
+#### `yarn install`
+
 then 
 
 #### `npm start`
 
+or
+
+#### `yarn start`
+
 This runs the app on http://localhost:3000
 
 ## Usage
-this project has been made very simple for student to use. A 3 page application that solves problem in 2 pages. 
+This project has been made very simple for student to use. A 3 page application that solves problem in 2 pages. 
 Any user that would like to use this app will need a course title, final semester grade and the credit unit for the course. On the home page there is a form to input the 3(course title, course grade, credit unit), after which you are to click on calculate. In siuations where there is error, like not inputing the right grade which is between the range of ( A- F, excluding E), there would be a prompt to make corrections as the app wont be able to calculate. When the right data is filled, next page displays all the course details inputed on a table, and one has the option to calculate or add more courses. All the courses done in a semester can be calclauted just keep adding more course till the courses have all been filled and then click calculate. The result is displayed beloy the table. 
 To calculate for a new semester the user has to click on Add new smester button. On refreshing the page all data is lost and all the course will have to be re-inputted if not done calculating.
+
+### Reference
+
+[Uses of Boostrap](https://www.htmlgoodies.com/html5/markup/10-common-uses-of-bootstrap.html#:~:text=Bootstrap%20is%20a%20framework%20to,modals%2C%20image%20carousels%2C%20etc.&text=Here%20are%20some%20additional%20reasons,to%20phones%2C%20tablets%2C%20and%20desktops)
+
+[React-Router-Dom](https://www.freecodecamp.org/news/react-router-in-5-minutes/)
+
+[Context state management](https://reactjs.org/docs/context.html)
 
