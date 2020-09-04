@@ -44,7 +44,7 @@ export class Provider extends Component {
 		results: [],
          cumulativeData :[ ],
 		gpa: 0,
-		cgpa:0,
+		
 		dispatch: (action) => {
 			this.setState((state) => reducer(state, action));
 		}

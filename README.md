@@ -1,19 +1,53 @@
 ## Cummulative Grade Point Accumulator
-GPA is a Grade Point Avarage Calculator written using ReactJs, a JavaScript library
+GPA is a Grade Point Avarage Calculator written using ReactJs, a JavaScript library. 
 
+Having a good GPA is important, that is why I have created this app to help student know where they stand and how to plan their college goals in respect to their grades.
 
 ## Description
-This is project was done using ReactJs, a JavaScript library which is also called a framework these days. After deep thoughts and carrying out of surveys, asking fellow student what they would prefer, the one with more response was a GPA calculator. This calculator was done with no backend or api or database, just a state management
+This is project was done using ReactJs, a JavaScript library which is also called a framework these days. After deep thoughts and carrying out of surveys, asking fellow student what they would prefer, the one with more response was a GPA calculator. This calculator was done with a state management, ***Context State Management***, ***React-router*, **bootstrap** and **uuid** for generating id.  
 
+Your average GPA is a number that shows what you typically scored in your classes throughout the semester, term, and year. Your GPA scores can go up and down throughout your time at the university and will change according to how much you improve your overall grades (or, in some cases, how much you fell behind).
+
+Using a grade point system of 5, The calculator will give the GPA of each semester, as long as user keeps adding more courses. After calculating for a semester, another can be calculated for a new semester by clicking the ***add new semster*** button. The GPA calculator needs 3 parameters, The course title, the course grade and the course credit. On click of the **Calculate** button, the user is taken to another page that gives the option of deleting of the course detail entered, adding of more courses, and calculating the GPA of the course.  
+Clicking of the ADD new semester, automatically wipes the previous courses recorded and a new form is displayed to add course information to be calculated.
+
+### Methods
+
+#### Wireframe
+Aa wireframe 
+
+#### React
+React is a popular used frontend JavaScript library which is also called a framework was launched in 2013. It makes it easy defining what a UI should look like. The JSX helps in writing HTML in JavaScript. React boosts productivity and facilitates maintenance. It ensures faster rendering wwhen building a heavy load application with the virtual DOM. Whe usin gReact Js one can be sure to have stable code as changes made in child component doesn't affect the parent component.  
+React JS also helps in the breakdown of components, for large application, using a single file isn't an issue anymore. Just creatae multiple files and import into one main file, In situations when using HTML and CSS and JS, where the navbar has to be rewritten in all the HTML files created, just a single NavBAr.js file would be used in React and it displays on all pages. There are more reasons to use React.
+
+#### React Router 
+React Router is a collection of navigational components that compose declaratively with an application. This app was to be made as a SinglePae App and React-router renders certain components to display depending on the route  beng used. To use react router and insallation needs to be done using "yarn add react-router-dom" or "npm install react-router-dom".  
+The Link, BrowserRouter, Route and Switch was used in this project to achieve the Single Page Application. 
+
+#### Bootstrap 
+For a responsive and application, bootsrap was implemented, from the header to the table and card. Bootstrap is a framewor that help design websites faster and easier. It includes HTML andCSS based trmplates and also Javascript. With additonal CSS styling i created other parts of the project that I didnt make use of bootstrap. To ise bootstrap, it can either be installed or use of the cdn or download of the offline files.
+
+#### Context State Management
+Context provides a way to pass data through the component tree without having to pass props. It is designed to share data all round the react compnent.    
+In the Context.js file, the createContext creates an object. When React renders a component that subscribes to this Context object it will read the current context value from the closest matching Provider above it in the tree.  
+Using the Context.Provider it accepts a value prop that is then passed to components that are descendants of the Provider. The object containes state and dispatch function so that it can be used by any other ccompponent.  
+
+  
+The useReducer(reducer) takes two parameters, state and action and returns a new state based on an action. 
+
+In the App.js we import the Provider and wrap it around the components. In each component js file the Consumer is wrapped as the parent div.
+
+#### UUID
+This was used to generate random unique identifier for each inputed course. This helps the deleting and calculating aspecting of the project. to delete a data, the data has to be identifiied by a unique id. This is what the UUID does. The UUID is fast, uniform, secure, unpredictable and can also  be URL-friendly
 
 ## Installation
 To install this project, 
 
-### `npm install`
+#### `npm install`
 
 then 
 
-### `npm start`
+#### `npm start`
 
 This runs the app on http://localhost:3000
 
