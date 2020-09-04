@@ -21,9 +21,9 @@ class App extends Component {
 						<NavBar />
 						<Switch>
 							<Route exact path="/" component={AddResult} />
-							<Route exact path="/about" component={About} />
-							<Route exact path="/calculate" component={Calculate} />
-							<Route exact path="/calculate/gp" component={Gp} />
+							<Route path="/about" component={About} />
+							<Route path="/calculate" component={Calculate} />
+							<Route path="/calculate/gp" component={Gp} />
 						</Switch>
 					</div>
 				</Router>

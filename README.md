@@ -4,7 +4,7 @@ GPA is a Grade Point Avarage Calculator written using ReactJs, a JavaScript libr
 Having a good GPA is important, that is why I have created this app to help student know where they stand and how to plan their college goals in respect to their grades.
 
 ## Description
-This is project was done using ReactJs, a JavaScript library which is also called a framework these days. After deep thoughts and carrying out of surveys, asking fellow student what they would prefer, the one with more response was a GPA calculator. This calculator was done with a state management, ***Context State Management***, ***React-router*, **bootstrap** and **uuid** for generating id.  
+This is project was done using ReactJs, a JavaScript library which is also called a framework these days. After deep thoughts and carrying out of surveys, asking fellow student what they would prefer, the one with more response was a GPA calculator. This calculator was done with a state management, ***Context State Management***, ***React-router***, ***bootstrap*** and ***uuid*** for generating id.  
 
 Your average GPA is a number that shows what you typically scored in your classes throughout the semester, term, and year. Your GPA scores can go up and down throughout your time at the university and will change according to how much you improve your overall grades (or, in some cases, how much you fell behind).
 
@@ -20,15 +20,60 @@ The wireframe was the second stage for this app before going into writing code. 
 ![homepage wireframe](src/asset/wireframe1.JPG)  
 
 #### React
-React is a popular used frontend JavaScript library which is also called a framework was launched in 2013. It makes it easy defining what a UI should look like. The JSX helps in writing HTML in JavaScript. React boosts productivity and facilitates maintenance. It ensures faster rendering wwhen building a heavy load application with the virtual DOM. Whe usin gReact Js one can be sure to have stable code as changes made in child component doesn't affect the parent component.  
-React JS also helps in the breakdown of components, for large application, using a single file isn't an issue anymore. Just creatae multiple files and import into one main file, In situations when using HTML and CSS and JS, where the navbar has to be rewritten in all the HTML files created, just a single NavBAr.js file would be used in React and it displays on all pages. There are more reasons to use React.
+React.js is a JavaScript library which is also called a framework these days that was created by Facebook in 2013. It is often thought of as the “view”
+in a model-view-controller (MVC) user interface. This makes sense when you consider the fact that the only function that must be implemented in React is the “render” function. The render function provides the output that the user sees (the “view”).
+It makes it easy defining what a UI should look like. The JSX helps in writing HTML in JavaScript. React boosts productivity and facilitates maintenance. It ensures faster rendering wwhen building a heavy load application with the virtual DOM. Whe usin gReact Js one can be sure to have stable code as changes made in child component doesn't affect the parent component.  
+React JS also helps in the breakdown of components, for large application, using a single file isn't an issue anymore. Just creatae multiple files and import into one main file, In situations when using HTML and CSS and JS, where the navbar has to be rewritten in all the HTML files created, just a single NavBAr.js file would be used in React and it displays on all pages. There are more reasons to use React.   
+To start a react project the following command is all that is needed;  
+
+#### `npx create-react-app app-name`
+
+For situations where react hasn't been intalled on a user's pc;
+
+#### `npm install-g create-react-app`
+
+After running, the React app installs some starter files. The developer using React just has to add more files or remove depending on preference.
+
+my-app  
+├── README.md  
+├── node_modules  
+├── package.json  
+├── .gitignore  
+├── public  
+│   ├── favicon.ico  
+│   ├── index.html  
+│   ├── logo192.png  
+│   ├── logo512.png  
+│   ├── manifest.json  
+│   └── robots.txt  
+└── src  
+    ├── App.css  
+    ├── App.js  
+    ├── App.test.js  
+    ├── index.css  
+    ├── index.js  
+    ├── logo.svg  
+    └── serviceWorker.js  
+to run a react project;  
+
+#### `npm start`
+
+
 
 #### Component 
 A component is one isolated piece of interface. They are the building blocks of any React app and a typical React app will have many of these. In the case of this project we have 5 components. there different types of component, the **Functional(Stateless) Components** and the **Class(stateful) Components**
 ##### Functional Components
-These components are purely presentational and are simply represented by a function that optionally takes props and returns a React element to be rendered to the page.
+These components are purely presentational and are simply represented by a function that optionally takes props and returns a React element to be rendered to the page. Often refered to as;   
+**Functional** because they are basically functions.  
+**Stateless** because they do not hold and/or manage state.  
+**Presentational** because all they do is output UI elements.  
+
 ##### Class Components
-These components are created using ES6’s class syntax. They have some additional features such as the ability to contain logic (for example methods that handle onClick events), local stateand other capabilities.
+These components are created using ES6’s class syntax. They have some additional features such as the ability to contain logic (for example methods that handle onClick events), local stateand other capabilities.  
+Class component is mostly referred to as;  
+**Class** because they are basically classes.  
+**Smart** because they can contain logic.  
+**Stateful** because they can hold and/or manage local state.
 
 
 #### React Router 
