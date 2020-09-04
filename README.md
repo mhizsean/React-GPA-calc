@@ -15,7 +15,8 @@ Clicking of the ADD new semester, automatically wipes the previous courses recor
 
 #### Wireframe
 A wireframe is a way to design a website service at the structural level. A wireframe is commonly used to lay out content and functionality on a page which takes into account user needs and user journeys. Wireframes are used early in the development process to establish the basic structure of a page before visual design and content is added.  
-The wireframe was the second stage for this app before going into writing code. For the wireframing of this project, it was done on [draw.io](https://app.diagrams.net/)
+The wireframe was in the early stage ofthe project lifecycle before going into writing code. For the wireframing of this project, it was done on [draw.io](https://app.diagrams.net/).
+Wireframes can be simply hand drawn, but are often put together using software like Microsoft’s Visio, to provide an on-screen delivery. However, if the wireframes are going to be used for a prototype usability test, it is best to create them in HTML. ne of the great advantages of wireframing is that it provides an early visual that can be used to review with the client. Users can also review it as an early feedback mechanism for prototype usability tests. Not only are wireframes easier to amend than concept designs, once approved by the client and the users they provide confidence to the designer.  From a practical perspective, the wireframes ensure the page content and functionality are positioned correctly based on user needs. And as the project moves forward they can be used as a good dialogue between members of the project team to agree on the project vision and scope.
 
 ![homepage wireframe](src/asset/wireframe1.JPG)  
 
@@ -59,9 +60,9 @@ to run a react project;
 #### `npm start`
 
 
-
 #### Component 
-A component is one isolated piece of interface. They are the building blocks of any React app and a typical React app will have many of these. In the case of this project we have 5 components. there different types of component, the **Functional(Stateless) Components** and the **Class(stateful) Components**
+A component is one isolated piece of interface. They are the building blocks of any React app and a typical React app will have many of these. In the case of this project we have 5 components. there different types of component, the **Functional(Stateless) Components** and the **Class(stateful) Components**.  
+
 ##### Functional Components
 These components are purely presentational and are simply represented by a function that optionally takes props and returns a React element to be rendered to the page. Often refered to as;   
 **Functional** because they are basically functions.  
