@@ -17,7 +17,7 @@ Clicking of the ADD new semester, automatically wipes the previous courses recor
 A wireframe is a way to design a website service at the structural level. A wireframe is commonly used to lay out content and functionality on a page which takes into account user needs and user journeys. Wireframes are used early in the development process to establish the basic structure of a page before visual design and content is added.  
 The wireframe was the second stage for this app before going into writing code. For the wireframing of this project, it was done on [draw.io](https://app.diagrams.net/)
 
-
+![homepage wireframe](src/asset/wireframe1.JPG)
 #### React
 React is a popular used frontend JavaScript library which is also called a framework was launched in 2013. It makes it easy defining what a UI should look like. The JSX helps in writing HTML in JavaScript. React boosts productivity and facilitates maintenance. It ensures faster rendering wwhen building a heavy load application with the virtual DOM. Whe usin gReact Js one can be sure to have stable code as changes made in child component doesn't affect the parent component.  
 React JS also helps in the breakdown of components, for large application, using a single file isn't an issue anymore. Just creatae multiple files and import into one main file, In situations when using HTML and CSS and JS, where the navbar has to be rewritten in all the HTML files created, just a single NavBAr.js file would be used in React and it displays on all pages. There are more reasons to use React.
@@ -35,11 +35,13 @@ For a responsive and application, bootsrap was implemented, from the header to t
 Context provides a way to pass data through the component tree without having to pass props. It is designed to share data all round the react compnent.    
 In the Context.js file, the createContext creates an object. When React renders a component that subscribes to this Context object it will read the current context value from the closest matching Provider above it in the tree.  
 Using the Context.Provider it accepts a value prop that is then passed to components that are descendants of the Provider. The object containes state and dispatch function so that it can be used by any other ccompponent.  
-
+![State and action](src/asset/state.png)
   
 The useReducer(reducer) takes two parameters, state and action and returns a new state based on an action. 
+![reducer image](src/asset/reducer.png)
 
 In the App.js we import the Provider and wrap it around the components. In each component js file the Consumer is wrapped as the parent div.
+![provider wrapped in app.js](src/asset/provider.png)
 
 #### UUID
 This was used to generate random unique identifier for each inputed course. This helps the deleting and calculating aspecting of the project. to delete a data, the data has to be identifiied by a unique id. This is what the UUID does. The UUID is fast, uniform, secure, unpredictable and can also  be URL-friendly.
